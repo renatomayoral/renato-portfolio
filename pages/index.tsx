@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Hero from "@/components/Hero";
-import Projects from '@/components/Projects'
-import Portfolio from "@/components/Portfolio";
+import Hero from "@/sections/Hero";
+import Portfolio from "@/sections/Portfolio";
+import About from "@/sections/About";
+import Skills from "@/sections/Skills";
+import Qualifications from "@/sections/Qualifications";
 
 
 export default function Home() {
@@ -17,9 +19,10 @@ export default function Home() {
 
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <Hero />
-        <Projects />
+        <About />
+        <Skills />
+        <Qualifications />
         <Portfolio />
-        
       </main>
     </div>
   );
