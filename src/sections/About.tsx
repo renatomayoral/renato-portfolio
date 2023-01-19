@@ -1,6 +1,6 @@
 import Image from "next/image";
 import web1 from "@/public/web1.png";
-import DropdownLinkButton from "@/components/DropdownLinkButton2";
+import DropdownLinkButton from "@/src/components/DropdownLinkButton2";
 
 export default function About() {
   return (

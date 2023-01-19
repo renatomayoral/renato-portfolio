@@ -1,7 +1,7 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail} from "react-icons/ai";
 import Image from "next/image";
-import renatotransp from "../public/renatotransp.png";
+import renatotransp from "@/public/renatotransp.png";
 import {useTheme} from 'next-themes'
 
 

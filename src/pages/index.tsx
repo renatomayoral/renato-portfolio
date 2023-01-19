@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Hero from "@/sections/Hero";
-import Portfolio from "@/sections/Portfolio";
-import About from "@/sections/About";
-import Skills from "@/sections/Skills";
-import Qualifications from "@/sections/Qualifications";
+import Hero from "@/src/sections/Hero";
+import Portfolio from "@/src/sections/Portfolio";
+import About from "@/src/sections/About";
+import Skills from "@/src/sections/Skills";
+import Qualifications from "@/src/sections/Qualifications";
 
 
 export default function Home() {
