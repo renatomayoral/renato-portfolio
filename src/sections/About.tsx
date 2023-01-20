@@ -1,6 +1,6 @@
 import Image from "next/image";
 import web1 from "@/public/web1.png";
-import DropdownLinkButton from "@/src/components/DropdownLinkButton2";
+import DropdownButton from "@/src/components/DropdownButton";
 
 export default function About() {
   return (
@@ -49,7 +49,10 @@ export default function About() {
       </div>
       </div>
       <div className="py-4">
-        <DropdownLinkButton/>
+      <DropdownButton options={[
+          'Portuguese PT-BR',
+          'English'
+        ]} />
       </div>
     </section>
   );

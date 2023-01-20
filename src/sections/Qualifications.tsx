@@ -1,4 +1,3 @@
-
 export default function Qualifications() {
   return (
     <section className="py-10">
@@ -21,28 +20,37 @@ export default function Qualifications() {
       <div className="flex justify-center">
         <div>
           <h1 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          Software Engineer
+            Software Engineer
           </h1>
           <h2 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          Microsoft - Peru
+            Microsoft - Peru
           </h2>
           <p className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          2016-2020
+            2016-2020
           </p>
         </div>
+        <div>
 
-        <div className="flex text-blue-500 bg-blue-700">
-        <p className="flex text-blue-500">Hello</p>
+        
+        <div className="w-2 bg-blue-700 h-72">
+          
         </div>
+        <div className="w-4 bg-blue-700 h-4 rounded-full">
+          
+        </div>
+        </div>
+
+
+
         <div>
           <h1 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          Software Engineer
+            Software Engineer
           </h1>
           <h2 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          Microsoft - Peru
+            Microsoft - Peru
           </h2>
           <p className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-          2016-2020
+            2016-2020
           </p>
         </div>
       </div>

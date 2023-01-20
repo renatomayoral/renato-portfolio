@@ -3,6 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail} from "react-icons/ai";
 import Image from "next/image";
 import renatotransp from "@/public/renatotransp.png";
 import {useTheme} from 'next-themes'
+import DropdownButton from "../components/DropdownButton";
 
 
 export default function Hero() {
@@ -31,7 +32,12 @@ export default function Hero() {
           <li>
             <BsFillMoonStarsFill onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="cursor-pointer text-2xl" />
           </li>
-
+          <li className="px-4">
+      <DropdownButton options={[
+          'Portuguese PT-BR',
+          'English'
+        ]} />
+        </li>
         </ul>
       </nav>
 
