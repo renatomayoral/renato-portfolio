@@ -6,6 +6,7 @@ import Skills from "@/src/sections/Skills";
 import Qualifications from "@/src/sections/Qualifications";
 import DropdownButton from "@/src/components/DropdownButton";
 import QualificationButton from "@/src/components/QualificationButton";
+import Books from "../sections/Books";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Skills />
         <Qualifications />
         <Portfolio />
+        <Books/>
         <DropdownButton options={[
           'Portuguese PT-BR',
           'English'

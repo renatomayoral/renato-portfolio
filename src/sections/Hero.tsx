@@ -1,40 +1,14 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
-import { IoLanguage } from "react-icons/io5";
 import Image from "next/image";
 import renatotransp from "@/public/renatotransp.png";
-import { useTheme } from "next-themes";
-import DropdownButton from "../components/DropdownButton";
+import Navbar from "../components/Navbar";
+
 
 export default function Hero() {
-  const { theme, setTheme } = useTheme();
+  
   return (
     <section className="min-h-screen">
-      <nav className=" py-10 mb-3 flex justify-evenly">
-        <h1 className="text-xl font-burtons">Renato Mayoral</h1>
-        <ul className="flex justify-center items-center">
-          <li className="px-4">Home</li>
-          <li className="px-4">About</li>
-          <li className="px-4">Skills</li>
-          <li className="px-4">Qualification</li>
-          <li className="px-4">Portfolio</li>
-        </ul>
-        <ul className="flex">
-          <li className="px-4">
-            <IoLanguage className="cursor-pointer text-2xl" />
-          </li>
-          <li>
-            <BsFillMoonStarsFill
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="cursor-pointer text-2xl"
-            />
-          </li>
-          <li className="px-4">
-            <DropdownButton options={["Portuguese PT-BR", "English"]} />
-          </li>
-        </ul>
-      </nav>
-
+      <Navbar/>
       <div className="text-center py-5 justify-center items-center">
         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
           Renato Mayoral
