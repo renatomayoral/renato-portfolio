@@ -13,9 +13,9 @@ export default function Portfolio() {
           Most recent work
         </p>
       </div>
-      <div className="flex max-w-4xl">
-        <div className="flex py-10 lg:flex-row ">
-          <div className="flex-1">
+      <div className="flex max-w-3xl justify-center">
+        <div className="flex py-10 lg:flex-row">
+          <div>
             <Image
               className="rounded-lg object-cover"
               width={1400}

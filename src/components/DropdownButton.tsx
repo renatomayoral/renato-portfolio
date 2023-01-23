@@ -29,7 +29,7 @@ export default function DropdownButton({ options }: { options: string[] }) {
         onClick={() => setIsExpended(!isExpanded)}
         className="flex items-center bg-gradient-to-r from-cyan-600 to-teal-600 hover:bg-slate-800 px-2 py-1 text-white rounded-md"
       >
-        <p className="mr-1">CV Resume</p>
+        <p className="mr-1">Download CV</p>
         <div>
           {isCaretDown && <AiFillCaretDown />}
           {isCaretUp && <AiFillCaretUp />}
