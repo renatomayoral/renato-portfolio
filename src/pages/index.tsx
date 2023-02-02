@@ -7,6 +7,7 @@ import Qualifications from "@/src/sections/Qualifications";
 import DropdownButton from "@/src/components/DropdownButton";
 import QualificationButton from "@/src/components/QualificationButton";
 import Books from "../sections/Books";
+import Carousel from "../components/Carousel";
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className=" flex-col px-8 bg-white md:px-20 lg:px-40 dark:bg-gray-900 justify-center">
         <Hero />
         <About />
         <Skills />
@@ -32,6 +33,7 @@ export default function Home() {
           'English'
         ]} />
         <QualificationButton />
+        <Carousel />
 
       </main>
     </div>

@@ -1,24 +1,24 @@
 export default function Books() {
   return (
-    <section className=" flex items-center text-gray-600 px-4">
+    <section className=" flex items-center text-gray-600">
       <div className="container py-12 mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl text-gray-700 font-semibold">
+          <h1 className="text-3xl py-1 dark:text-white text-center font-medium">
             Books
           </h1>
           <h5 className="text-base md:text-lg text-gray-400 mb-1">
             My reading list
           </h5>
         </div>
-        <div className="flex flex-wrap justify-evenly">
-          <div className="p-4 lg:w-96 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
+        <div className="flex flex-wrap justify-evenly w-full">
+          <div className="p-6 lg:w-72 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
               <img
-                className="w-full rounded-lg object-cover"
+                className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg"
                 alt="blog"
               />
-              <div className="p-6 transition duration-300 ease-in">
+              <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">Clean Code</h1>
                 <h2 className="text-base font-medium text-teal-600 mb-1">
                   A Handbook of Agile Software Craftsmanship.
@@ -32,14 +32,14 @@ export default function Books() {
               </div>
             </div>
           </div>
-          <div className="p-4 sm:w-1/2 lg:w-96 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
+          <div className="p-6 lg:w-72 sm:w-1/2 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
               <img
-                className="w-full rounded-lg object-cover"
+                className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/51y5IIx7g2L._SX260_.jpg"
                 alt="blog"
               />
-              <div className="p-6 transition duration-300 ease-in">
+              <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">SEO 2023</h1>
                 <h2 className="text-base font-medium text-teal-600 mb-1">
                   Learn search engine optimization with smart internet marketing
@@ -54,14 +54,14 @@ export default function Books() {
               </div>
             </div>
           </div>
-          <div className="p-4 sm:w-1/2 lg:w-96 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
+          <div className="p-6 lg:w-72 sm:w-1/2 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
               <img
-                className="w-full rounded-lg object-cover"
+                className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41kW8itWddL._SX322_BO1,204,203,200_.jpg"
                 alt="blog"
               />
-              <div className="p-6 transition duration-300 ease-in">
+              <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">
                   Klara and the Sun
                 </h1>

@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen">
       <Navbar/>
-      <div className="text-center py-5 justify-center items-center">
+      <div className="text-center  justify-center items-center">
         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
           Renato Mayoral
         </h2>
@@ -21,29 +21,29 @@ export default function Hero() {
           technology.
         </p>
       </div>
-      <div className="text-5xl flex justify-center gap-8 text-gray-600">
-        <a className="hover:text-blue-400" href="https://www.linkedin.com/in/renato-mayoral/">
+      <div className="text-4xl flex justify-center gap-8 text-gray-600">
+        <a className="dark:hover:text-white hover:text-teal-600" href="https://www.linkedin.com/in/renato-mayoral/">
           <AiFillLinkedin />
         </a>
-        <a className="hover:text-blue-400" href="https://github.com/renatomayoral">
+        <a className="dark:hover:text-white hover:text-teal-600" href="https://github.com/renatomayoral">
           <AiFillGithub />
         </a>
       </div>
-      <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mx-auto overflow-hidden">
+      <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden">
         <Image
           src={renatotransp}
           alt={"Portfolio owener Photo"}
           object-fit="cover"
-          height={300}
-          width={300}
+          height={250}
+          width={250}
         />
       </div>
-      <div className=" justify-center flex pt-6">
+      <div className=" justify-center flex pt-10">
         <button
           onClick={() =>
             (window.location.href = "mailto:mailto:renatomayoral@gmail.com")
           }
-          className=" mt-2 bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md ml-8 flex items-center gap-2"
+          className=" mt-2 bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md flex items-center gap-2"
         >
           Contact Me
           <AiFillMail />
