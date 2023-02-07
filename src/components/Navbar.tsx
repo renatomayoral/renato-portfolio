@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
