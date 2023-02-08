@@ -71,21 +71,21 @@ export default function Navbar() {
 
       <ul className="flex">
         <li className="px-4">
-          <IoLanguage className="cursor-pointer text-2xl" />
+          <IoLanguage className=" cursor-pointer text-2xl text-teal-600" />
         </li>
         <li className="px-4">
           <BsFillMoonStarsFill
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="cursor-pointer text-2xl"
+            className="cursor-pointer text-2xl text-teal-600"
           />
         </li>
       </ul>
       <ul>
         <div onClick={handleNav} className=" block md:hidden">
           {!nav ? (
-            <AiOutlineClose className=" text-2xl" />
+            <AiOutlineClose className=" text-2xl text-teal-600" />
           ) : (
-            <AiOutlineMenu className=" text-2xl" />
+            <AiOutlineMenu className=" text-2xl text-teal-600" />
           )}
         </div>
       </ul>

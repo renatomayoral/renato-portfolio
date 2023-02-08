@@ -9,7 +9,7 @@ export default function About() {
         <h3 className="text-3xl md:text-4xl py-1 dark:text-white text-center">
           About Me
         </h3>
-        <p className="text-md md:text-xl text-gray-600 dark:text-gray-400 text-center">
+        <p className="text-md md:text-lg font-medium text-gray-500 dark:text-gray-400 text-center">
           My introduction
         </p>
       </div>
@@ -26,7 +26,7 @@ export default function About() {
           </div>
         </div>
         <div className="px-6 flex-col justify-center">
-          <div className="justify-evenly text-left md:text-lg max-w-xl mx-auto py-6">
+          <div className="justify-evenly text-left md:text-lg max-w-xl mx-auto py-10">
             Web developer, with extensive knowledge and years of experience,
             working in web technologies and UI / UX design, delivering quality
             working.
@@ -45,7 +45,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="pb-10 py-2 flex justify-center">
+          <div className="pb-10 py-10 flex justify-center">
             <DropdownButton options={["Portuguese PT-BR", "English"]} />
           </div>
         </div>

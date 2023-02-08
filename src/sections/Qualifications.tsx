@@ -6,7 +6,7 @@ export default function Qualifications() {
   return (
     <section className="py-10">
       <div>
-        <h1 className="text-3xl py-1 dark:text-white text-center font-bold">
+        <h1 className="text-3xl py-1 dark:text-white text-center font-semibold">
           Qualification
         </h1>
         <p className="text-md md:text-lg font-medium text-gray-500 dark:text-gray-400 text-center">
