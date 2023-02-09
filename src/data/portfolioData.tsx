@@ -32,3 +32,7 @@ export const portfolioData = [
       cardLink={"https://en.wikipedia.org/wiki/Next.js"}
     />,
   ];
+
+  export const skillsData = [
+    
+  ]
