@@ -1,8 +1,17 @@
 import { useState } from "react";
-import { AiFillCaretUp, AiFillCaretDown, AiOutlineShop } from "react-icons/ai";
-import { SiHtml5 } from "react-icons/si";
+import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 
-export default function skillButton() {
+export default function skillButton(props: {
+  titleIcon: any;
+  title: string;
+  experienceTime: string;
+  skills1?:any
+  skills2?:any
+  skills3?:any
+  skills4?:any
+  skills5?:any
+  skills6?:any
+}) {
   const [isExpanded, setIsExpended] = useState(false);
   const isCaretDown = isExpanded;
   const isCaretUp = !isExpanded;
@@ -13,10 +22,14 @@ export default function skillButton() {
         onClick={() => setIsExpended(!isExpanded)}
         className=" flex justify-center items-center dark:text-white text-black rounded-md"
       >
-        <AiOutlineShop className=" text-3xl text-teal-600" />
+        <a className=" text-3xl text-teal-600">
+          {props.titleIcon}
+        </a>
         <div className="flex-col mx-2 ">
-          <h1 className=" font-semibold text-lg">Frontend developer</h1>
-          <p className="flex text-sm text-gray-400 leading-none ">More than 3 years</p>
+          <h1 className=" font-semibold text-lg">{props.title}</h1>
+          <p className="flex text-sm text-gray-400 leading-none ">
+            {props.experienceTime}
+          </p>
         </div>
         <div>
           {isCaretDown && <AiFillCaretDown />}
@@ -24,23 +37,14 @@ export default function skillButton() {
         </div>
       </button>
       {isExpanded && (
-        <div className=" flex justify-center py-1 mt-2 ">
-          
-
-          <ul className="py-2">
-          <div className="flex items-center px-2">
-            <SiHtml5 className="mx-2 mt-2 text-2xl"/>
-          
-            <div className="flex-col">
-              <div className="flex justify-between">
-                <li>HTML5</li>
-                <p>25%</p>
-              </div>
-              <div className="w-44 bg-gray-200 rounded-full ">
-                <div className="bg-gradient-to-r from-cyan-600 to-teal-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full w-1/4"></div>
-              </div>
-            </div>
-            </div>
+        <div className=" flex justify-center py-2 mt-2 ">
+          <ul className="py-4">
+          {props.skills1}
+          {props.skills2}
+          {props.skills3}
+          {props.skills4}
+          {props.skills5}
+          {props.skills6}
           </ul>
         </div>
       )}
