@@ -10,7 +10,7 @@ export default function Books() {
             My reading list
           </h5>
         </div>
-        <div className="flex flex-wrap justify-evenly w-full">
+        <div className="flex flex-wrap justify-evenly w-full p-10">
           <div className="p-6 lg:w-72 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
               <img

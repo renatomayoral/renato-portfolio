@@ -58,15 +58,12 @@ export default function Hero() {
         />
       </div>
       <div className=" justify-center flex pt-10">
-        <button
-          onClick={() =>
-            (window.location.href = "mailto:mailto:renatomayoral@gmail.com")
-          }
+        <a href="mailto:renatomayoral@gmail.com" target={"_blank"}
           className=" mt-2 bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md flex items-center gap-2"
         >
           Contact Me
           <AiFillMail />
-        </button>
+        </a>
       </div>
     </section>
   );

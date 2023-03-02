@@ -1,8 +1,51 @@
-import {MdWorkOutline, MdOutlineCastForEducation} from 'react-icons/md'
-//MdWorkOutline
-//MdOutlineCastForEducation
+import { MdWorkOutline, MdOutlineCastForEducation } from "react-icons/md";
+import {GiAchievement } from "react-icons/gi"
+import {AiOutlineSafetyCertificate} from "react-icons/ai"
+import WorkItem from "../components/QualificationComponents/WorkItems";
+import EducationItem from "../components/QualificationComponents/EducationItems";
+import CertificatesItem from "../components/QualificationComponents/CertificatesItems";
+import AchievementsItem from "../components/QualificationComponents/AchievementsItems";
+import {
+  workData,
+  educationData,
+  achievementsData,
+  certificatesData,
+} from "../data/qualificationData";
+
+import { useState } from "react";
 
 export default function Qualifications() {
+  const [isEducation, setIsEducation] = useState(true);
+  const [isWork, setIsWork] = useState(false);
+  const [isAchievements, setIsAchievements] = useState(false);
+  const [isCertificates, setIsCertificate] = useState(false);
+  const isEducationHandler = () => {
+    setIsEducation(true);
+    setIsWork(false);
+    setIsAchievements(false);
+    setIsCertificate(false);
+  };
+  const isWorkHandler = () => {
+    setIsEducation(false);
+    setIsWork(true);
+    setIsAchievements(false);
+    setIsCertificate(false);
+  };
+
+  const isAchievementsHandler = () => {
+    setIsEducation(false);
+    setIsWork(false);
+    setIsAchievements(true);
+    setIsCertificate(false);
+  };
+
+  const isCertificatesHandler = () => {
+    setIsEducation(false);
+    setIsWork(false);
+    setIsAchievements(false);
+    setIsCertificate(true);
+  };
+
   return (
     <section className="py-10">
       <div>
@@ -13,77 +56,84 @@ export default function Qualifications() {
           My journey
         </p>
       </div>
-      <div className="flex justify-center py-10 font-semibold">
-        <div className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200">
-        <MdOutlineCastForEducation  className='mx-1'/>
-          Education
-        </div>
-        <div className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200">
-          <MdWorkOutline className='mx-1'/>
-          Work
-        </div>
-      </div>
+      <div className="flex-col justify-center py-10 font-semibold">
+        <div className="flex flex-wrap justify-center p-6">
+          <button
+            onClick={isEducationHandler}
+            className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200 cursor-pointer"
+          >
+            <MdOutlineCastForEducation className="mx-1" />
+            Education
+          </button>
 
+          <button
+            onClick={isWorkHandler}
+            className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200 cursor-pointer"
+          >
+            <MdWorkOutline className="mx-1" />
+            Work
+          </button>
 
-      <div className="flex justify-center relative bg-zinc-600">
-        <div className="flex-col text-right w-full">
-          <h1 className="justify-center text-md px-4 font-medium text-gray-800 dark:text-gray-200">
-            Software Engineer
-          </h1>
-          <h2 className="justify-center text-md font-normal px-4 text-gray-800 dark:text-gray-200">
-            Microsoft - Peru
-          </h2>
-          <p className="justify-center text-md font-light py-2 px-4 text-gray-800 dark:text-gray-200">
-            2016-2020
-          </p>
-        </div>
-        <div className="relative col-span-1 w-12 max-h-fit flex justify-center items-center bg-slate-700">
-          <div className=" w-0.5 bg-gradient-to-r from-cyan-600 to-teal-600 h-full rounded-full"></div>
-          
-          <div className=" absolute w-5 top-0 bg-gradient-to-r from-cyan-600 to-teal-600 h-5 rounded-full justify-center "></div>
-          <div className=" absolute w-5 top-1/4 bg-gradient-to-r from-cyan-600 to-teal-600 h-5 rounded-full justify-center "></div>
-          <div className=" absolute w-5 top-2/4 bg-gradient-to-r from-cyan-600 to-teal-600 h-5 rounded-full justify-center "></div>
-          <div className=" absolute w-5 top-3/4 bg-gradient-to-r from-cyan-600 to-teal-600 h-5 rounded-full justify-center "></div>
-          <div className=" absolute w-5 bottom-0 bg-gradient-to-r from-cyan-600 to-teal-600 h-5 rounded-full justify-center "></div>
-        </div>
+          <button
+            onClick={isAchievementsHandler}
+            className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200 cursor-pointer"
+          >
+            <GiAchievement className="mx-1" />
+            Achievements
+          </button>
+          <button
+            onClick={isCertificatesHandler}
+            className="flex items-center justify-center text-lg py-2 px-4 text-gray-600 dark:text-gray-200 cursor-pointer"
+          >
+            <AiOutlineSafetyCertificate className="mx-1" />
+            Certificates
+          </button>
+          </div>
         
 
-        <div className=" flex-col text-left w-full">
-          <div className=" flex-col py-32">
-            <h1 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Software Engineer
-            </h1>
-            <h2 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Microsoft - Peru
-            </h2>
-            <p className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              2016-2020
-            </p>
-          </div>
-          <div className=" flex-col">
-            <h1 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Software Engineer
-            </h1>
-            <h2 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Microsoft - Peru
-            </h2>
-            <p className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              2016-2020
-            </p>
-          </div>
-          <div className=" flex-col">
-            <h1 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Software Engineer
-            </h1>
-            <h2 className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              Microsoft - Peru
-            </h2>
-            <p className="justify-center text-md py-2 px-4 text-gray-800 dark:text-gray-200">
-              2016-2020
-            </p>
-          </div>
+        <div className="py-10 flex justify-center">
+          <div className="flex-col justify-center max-w-sm">
+          {isEducation &&
+            educationData.map((item, idx) => (
+              <EducationItem
+                key={idx}
+                year={item.year}
+                title={item.title}
+                details={item.details}
+              />
+            ))}
+
+          {isWork &&
+            workData.map((item, idx) => (
+              <WorkItem
+                key={idx}
+                year={item.year}
+                title={item.title}
+                company={item.company}
+                details={item.details}
+              />
+            ))}
+
+          {isAchievements &&
+            achievementsData.map((item, idx) => (
+              <AchievementsItem
+                key={idx}
+                year={item.year}
+                title={item.title}
+                details={item.details}
+              />
+            ))}
+          {isCertificates &&
+            certificatesData.map((item, idx) => (
+              <CertificatesItem
+                key={idx}
+                year={item.year}
+                title={item.title}
+                details={item.details}
+              />
+            ))}
+            </div>
         </div>
-        
       </div>
     </section>
   );

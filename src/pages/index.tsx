@@ -4,8 +4,6 @@ import Portfolio from "@/src/sections/Portfolio";
 import About from "@/src/sections/About";
 import Skills from "@/src/sections/Skills";
 import Qualifications from "@/src/sections/Qualifications";
-import DropdownButton from "@/src/components/DropdownButton";
-import QualificationButton from "@/src/components/QualificationButton";
 import Books from "../sections/Books";
 import Carousel from "../components/Carousel";
 
@@ -28,11 +26,6 @@ export default function Home() {
         <Qualifications />
         <Portfolio />
         <Books/>
-        <DropdownButton options={[
-          'Portuguese PT-BR',
-          'English'
-        ]} />
-        <QualificationButton />
         <Carousel />
 
       </main>

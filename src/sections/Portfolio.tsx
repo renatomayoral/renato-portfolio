@@ -1,5 +1,3 @@
-import CarouselCard from "../components/CarouselCard";
-import web1 from "@/public/web1.png";
 import {portfolioData} from "../data/portfolioData"
 
 export default function Portfolio() {
@@ -16,7 +14,12 @@ export default function Portfolio() {
           Most recent work
         </p>
       </div>
+      <div className="md:flex py-10">
       {portfolioData[0]}
+      {portfolioData[1]}
+      {portfolioData[2]}
+      {portfolioData[3]}
+      </div>
       
     </section>
   );
