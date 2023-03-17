@@ -25,11 +25,11 @@ export default function PortfolioCard(props:any) {
           </p>
 
           <div className=" justify-start flex gap-4">
-            <a href={props.cardLink} target="_blank" className=" flex justify-center bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md items-center">
+            <a href={props.cardLink} target="_blank" rel="noreferrer" className=" flex justify-center bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md items-center">
               
               <FiGithub className=" text-2xl" />
             </a>
-            <a href={props.cardLink} target="_blank" className=" flex justify-center bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md items-center">
+            <a href={props.cardLink} target="_blank" rel="noreferrer" className=" flex justify-center bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md items-center">
               
               <FiExternalLink className=" text-2xl" />
             </a>

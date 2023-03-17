@@ -58,7 +58,7 @@ export default function Hero() {
         />
       </div>
       <div className=" justify-center flex pt-10">
-        <a href="mailto:renatomayoral@gmail.com" target={"_blank"}
+        <a href="mailto:renatomayoral@gmail.com" target={"_blank"} rel="noreferrer"
           className=" mt-2 bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-md flex items-center gap-2"
         >
           Contact Me

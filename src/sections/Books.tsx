@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Books() {
   return (
     <section className=" flex items-center text-gray-600">
@@ -13,7 +15,7 @@ export default function Books() {
         <div className="flex flex-wrap justify-center space-x-10 w-full">
           <div className="p-6 lg:w-72 sm:w-1/2 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
-              <img
+              <Image
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg"
                 alt="blog"
@@ -34,7 +36,7 @@ export default function Books() {
           </div>
           <div className="p-6 lg:w-72 sm:w-1/2 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
-              <img
+              <Image
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/51y5IIx7g2L._SX260_.jpg"
                 alt="blog"
@@ -56,7 +58,7 @@ export default function Books() {
           </div>
           <div className="p-6 lg:w-72 sm:w-1/2 w-full h-full mb-4 rounded-lg shadow-xl bg-gray-200 transform transition-all hover:translate-y-2 duration-300 hover:shadow-2xl">
             <div className="h-full rounded-lg overflow-hidden">
-              <img
+              <Image
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41kW8itWddL._SX322_BO1,204,203,200_.jpg"
                 alt="blog"
