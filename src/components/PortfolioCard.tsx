@@ -3,7 +3,7 @@ import Image from "next/image";
 import {FiGithub, FiExternalLink} from "react-icons/fi"
 
 
-export default function CarouselCard(props:any) {
+export default function PortfolioCard(props:any) {
   return (
     <div className="justify-center text-center m-4 p bg-gray-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-2 ">
     <div className="flex justify-center m-4">
@@ -20,7 +20,7 @@ export default function CarouselCard(props:any) {
       <h1 className=" text-left font-semibold text-xl">{props.title}</h1>
       <div className="flex flex-col justify-center">
         <div className="flex-col md:text-md max-w-md mx-auto text-start">
-          <p className=" py-2 text-gray-200 dark:text-gray-800 justify-center ">
+          <p className=" py-2 dark:text-gray-200 text-gray-800 justify-center ">
            {props.text}
           </p>
 

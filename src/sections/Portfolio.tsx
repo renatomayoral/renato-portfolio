@@ -14,11 +14,13 @@ export default function Portfolio() {
           Most recent work
         </p>
       </div>
-      <div className="md:flex py-10">
+      <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {portfolioData[0]}
-      {portfolioData[1]}
       {portfolioData[2]}
       {portfolioData[3]}
+      {portfolioData[4]}
+      {portfolioData[5]}
+      {portfolioData[6]}
       </div>
       
     </section>

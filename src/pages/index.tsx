@@ -5,7 +5,6 @@ import About from "@/src/sections/About";
 import Skills from "@/src/sections/Skills";
 import Qualifications from "@/src/sections/Qualifications";
 import Books from "../sections/Books";
-import Carousel from "../components/Carousel";
 
 
 export default function Home() {
@@ -26,7 +25,6 @@ export default function Home() {
         <Qualifications />
         <Portfolio />
         <Books/>
-        <Carousel />
 
       </main>
     </div>

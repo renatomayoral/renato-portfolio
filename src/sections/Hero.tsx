@@ -53,8 +53,8 @@ export default function Hero() {
           src={renatotransp}
           alt={"Portfolio owener Photo"}
           object-fit="cover"
-          height={2000}
-          width={2000}
+          height={300}
+          width={300}
         />
       </div>
       <div className=" justify-center flex pt-10">
