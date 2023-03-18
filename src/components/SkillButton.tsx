@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 
-export default function skillButton(props: {
+export default function SkillButton(props: {
   titleIcon: any;
   title: string;
   experienceTime: string;
