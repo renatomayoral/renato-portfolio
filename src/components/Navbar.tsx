@@ -1,3 +1,4 @@
+'use client';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoLanguage } from "react-icons/io5";

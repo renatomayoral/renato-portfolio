@@ -19,6 +19,8 @@ export default function Books() {
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg"
                 alt="blog"
+                width={400}
+                height={400}
               />
               <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">Clean Code</h1>
@@ -40,6 +42,8 @@ export default function Books() {
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/51y5IIx7g2L._SX260_.jpg"
                 alt="blog"
+                width={400}
+                height={400}
               />
               <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">SEO 2023</h1>
@@ -62,6 +66,8 @@ export default function Books() {
                 className="w-full h-72 rounded-lg object-fit"
                 src="https://m.media-amazon.com/images/I/41kW8itWddL._SX322_BO1,204,203,200_.jpg"
                 alt="blog"
+                width={400}
+                height={400}
               />
               <div className="transition duration-300 ease-in">
                 <h1 className="text-2xl font-semibold mb-3">
