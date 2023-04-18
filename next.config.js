@@ -1,19 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   experimental: {
     appDir: true,
   },
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'm.media-amazon.com',
-        port: '',
-        pathname: '**/*',
+        protocol: "https",
+        hostname: "m.media-amazon.com",
+        port: "",
+        pathname: "**/*",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  scope: "/app",
+});
+
+module.exports = withPWA(nextConfig);

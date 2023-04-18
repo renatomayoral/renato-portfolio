@@ -1,9 +1,7 @@
-import {portfolioData} from "../data/portfolioData"
+import PortfolioCard from "../components/PortfolioCard";
+import { portfolioData } from "../data/portfolioData";
 
 export default function Portfolio() {
-
-
-
   return (
     <section className="py-10 flex-col">
       <div>
@@ -15,14 +13,13 @@ export default function Portfolio() {
         </p>
       </div>
       <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      {portfolioData[0]}
-      {portfolioData[2]}
-      {portfolioData[3]}
-      {portfolioData[4]}
-      {portfolioData[5]}
-      {portfolioData[6]}
+        {portfolioData.map((props) => (
+          <PortfolioCard 
+            key={props.id}
+            {...props}
+             />
+        ))}
       </div>
-      
     </section>
   );
 }
