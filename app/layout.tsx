@@ -4,38 +4,56 @@ import { Providers } from 'app/providers';
 import type { Metadata } from 'next';
 
 
+const APP_NAME = "Renato Portfolio";
+const APP_DEFAULT_TITLE = "My Awesome PWA Portfolio";
+const APP_TITLE_TEMPLATE = "%s - PWA App";
+const APP_DESCRIPTION = "Best PWA Portfolio in the world! My awesome PWA";
+
 export const metadata: Metadata = {
-  title: "Renato Mayoral Portfolio",
-  description:
-    "This is a personal web portfolio",
-  keywords: ["Next.js", "React", "Typescript"],
-  themeColor: "#62c0c9",
-  authors: [{ name: "Renato Cru Mayoral", url: "https://renatomayoral.com" }],
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+  applicationName: APP_NAME,
+  title: {
+    default: APP_DEFAULT_TITLE,
+    template: APP_TITLE_TEMPLATE,
+  },
+  description: APP_DESCRIPTION,
+  manifest: "/manifest.json",
+  themeColor: "#FFFFFF",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: APP_DEFAULT_TITLE,
+  },
+  formatDetection: {
+    telephone: false,
   },
   icons: {
-    icon: "/icons/neon.png",
-    shortcut: "/icons/neon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/icons/touch-icon-ipad.png", sizes: "152x152" },
+      { url: "/icons/touch-icon-ipad-retina.png", sizes: "167x167" },
+      { url: "/icons/touch-icon-iphone-retina.png", sizes: "180x180" },
+    ],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
+  openGraph: {
+    type: "website",
+    siteName: APP_NAME,
+    title: {
+      default: APP_DEFAULT_TITLE,
+      template: APP_TITLE_TEMPLATE,
+    },
+    description: APP_DESCRIPTION,
+    images: "/icons/og.png",
   },
-  category: "technology",
+  twitter: {
+    card: "summary",
+    title: {
+      default: APP_DEFAULT_TITLE,
+      template: APP_TITLE_TEMPLATE,
+    },
+    description: APP_DESCRIPTION,
+    images: "/icons/twitter.png",
+  },
 };
-
 
 export default function Layout({
   children,
