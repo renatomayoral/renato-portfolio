@@ -1,12 +1,12 @@
 'use client';
-import { BsFillMoonStarsFill } from "react-icons/bs";
+
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoLanguage } from "react-icons/io5";
-import { useTheme } from "next-themes";
 import { useState } from "react";
+import DarkModeBtn from "components/Buttons/DarkModeBtn";
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
+
   const [nav, setNav] = useState(true);
 
   const handleNav = () => {
@@ -75,10 +75,7 @@ export default function Navbar() {
           <IoLanguage className=" cursor-pointer text-2xl text-teal-600" />
         </li>
         <li className="px-4">
-          <BsFillMoonStarsFill
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="cursor-pointer text-2xl text-teal-600"
-          />
+        <DarkModeBtn/>
         </li>
       </ul>
       <ul>

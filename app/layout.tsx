@@ -5,12 +5,12 @@ import type { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: "Alan AI",
+  title: "Renato Mayoral Portfolio",
   description:
-    "Alan AI is a free, open-source, and extensible a new way to use LLM with internet access, i",
-  keywords: ["Next.js", "React", "JavaScript"],
+    "This is a personal web portfolio",
+  keywords: ["Next.js", "React", "Typescript"],
   themeColor: "#62c0c9",
-  authors: [{ name: "Turing AI", url: "https://turingai.tech" }],
+  authors: [{ name: "Renato Cru Mayoral", url: "https://renatomayoral.com" }],
   robots: {
     index: true,
     follow: true,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 export default function Layout({
   children,
 }: {
-  children: any
+  children: React.ReactNode
 }) {
   return (
     <html lang='pt-BR' suppressHydrationWarning>
