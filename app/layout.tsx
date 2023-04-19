@@ -2,18 +2,17 @@
 import 'app/globals.css';
 import { Providers } from 'app/providers';
 import type { Metadata } from 'next';
+import type { ReactNode } from "react";
 
 
 const APP_NAME = "Renato Portfolio";
-const APP_DEFAULT_TITLE = "My Awesome PWA Portfolio";
-const APP_TITLE_TEMPLATE = "%s - PWA App";
-const APP_DESCRIPTION = "Best PWA Portfolio in the world! My awesome PWA";
+const APP_DESCRIPTION = "This is an example of using next-pwa";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
   title: {
-    default: APP_DEFAULT_TITLE,
-    template: APP_TITLE_TEMPLATE,
+    default: APP_NAME,
+    template: "%s - PWA App",
   },
   description: APP_DESCRIPTION,
   manifest: "/manifest.json",
@@ -21,44 +20,21 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: APP_DEFAULT_TITLE,
+    title: APP_NAME,
   },
   formatDetection: {
     telephone: false,
   },
   icons: {
     shortcut: "/favicon.ico",
-    apple: [
-      { url: "/icons/touch-icon-ipad.png", sizes: "152x152" },
-      { url: "/icons/touch-icon-ipad-retina.png", sizes: "167x167" },
-      { url: "/icons/touch-icon-iphone-retina.png", sizes: "180x180" },
-    ],
-  },
-  openGraph: {
-    type: "website",
-    siteName: APP_NAME,
-    title: {
-      default: APP_DEFAULT_TITLE,
-      template: APP_TITLE_TEMPLATE,
-    },
-    description: APP_DESCRIPTION,
-    images: "/icons/og.png",
-  },
-  twitter: {
-    card: "summary",
-    title: {
-      default: APP_DEFAULT_TITLE,
-      template: APP_TITLE_TEMPLATE,
-    },
-    description: APP_DESCRIPTION,
-    images: "/icons/twitter.png",
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 
 export default function Layout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang='pt-BR' suppressHydrationWarning>
