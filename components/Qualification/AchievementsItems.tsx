@@ -16,7 +16,7 @@ const AchievementsItem = ({
           <span className=" text-lg font-semibold text-teal-600">{title}</span>
           
         </p>
-        <p className=" my-2 text-base font-normal text-stone-500">{details}</p>
+        <p className=" my-2 text-base font-normal text-stone-500 dark:text-white">{details}</p>
       </li>
     </ol>
   );

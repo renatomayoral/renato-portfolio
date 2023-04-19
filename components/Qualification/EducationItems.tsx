@@ -17,7 +17,7 @@ const EducationItem = ({
           <span className=" text-lg font-semibold text-teal-600">{title}</span>
           
         </p>
-        <p className=" my-2 text-base font-normal text-stone-500">{details}</p>
+        <p className=" my-2 text-base font-normal dark:text-white text-stone-500">{details}</p>
       </li>
     </ol>
   );

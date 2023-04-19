@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoLanguage } from "react-icons/io5";
 import { useState } from "react";
 import DarkModeBtn from "components/Buttons/DarkModeBtn";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
-
   const [nav, setNav] = useState(true);
 
   const handleNav = () => {
@@ -23,50 +23,84 @@ export default function Navbar() {
         }
       >
         <ul className=" text-center m-6 ">
-          <li className=" flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            HOME
+          <li className=" cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="home" spy={true} smooth={true} duration={500}>
+              HOME
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            ABOUT
+          <li className="cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="about" spy={true} smooth={true} duration={500}>
+              ABOUT
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            SKILLS
+          <li className="cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="skills" spy={true} smooth={true} duration={500}>
+              SKILLS
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            QUALIFICATION
+          <li className="cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="qualification" spy={true} smooth={true} duration={500}>
+              QUALIFICATION
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            PORTFOLIO
+          <li className="cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="portfolio" spy={true} smooth={true} duration={500}>
+              PORTFOLIO
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            COURSES
+          <li className="cursor-pointer flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link to="courses" spy={true} smooth={true} duration={500}>
+              COURSES
+            </Link>
           </li>
-          <li className="flex px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
-            BOOKS
+          <li className="flex cursor-pointer px-4 h-10 bg-teal-600 rounded-md justify-center items-center text-white font-medium text-lg m-6">
+            <Link
+              to="books"
+              spy={true}
+              smooth={true}
+              offset={200}
+              duration={500}
+            >
+              BOOKS
+            </Link>
           </li>
         </ul>
       </div>
       <ul className=" hidden md:flex justify-center items-center">
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          HOME
+        <li className="cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="home" spy={true} smooth={true} duration={500}>
+            HOME
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          ABOUT
+        <li className="cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="about" spy={true} smooth={true} duration={500}>
+            ABOUT
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          SKILLS
+        <li className="cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="skills" spy={true} smooth={true} duration={500}>
+            SKILLS
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          QUALIFICATION
+        <li className="cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="qualification" spy={true} smooth={true} duration={500}>
+            QUALIFICATION
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          PORTFOLIO
+        <li className="cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="portfolio" spy={true} smooth={true} duration={500}>
+            PORTFOLIO
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          COURSES
+        <li className=" cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="courses" spy={true} smooth={true} duration={500}>
+            COURSES
+          </Link>
         </li>
-        <li className="px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
-          BOOKS
+        <li className=" cursor-pointer px-4 bg-teal-600 rounded-md text-white font-medium text-sm mx-2">
+          <Link to="books" spy={true} smooth={true} duration={500}>
+            BOOKS
+          </Link>
         </li>
       </ul>
 
@@ -75,7 +109,7 @@ export default function Navbar() {
           <IoLanguage className=" cursor-pointer text-2xl text-teal-600" />
         </li>
         <li className="px-4">
-        <DarkModeBtn/>
+          <DarkModeBtn />
         </li>
       </ul>
       <ul>

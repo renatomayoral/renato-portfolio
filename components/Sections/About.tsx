@@ -5,9 +5,10 @@ import DropdownButton from "components/Buttons/DropdownButton";
 
 export default function About() {
   return (
-    <section className="py-5 flex-col">
+    <section className="about">
+      <div className="py-5 flex-col">
       <div>
-        <h3 className="text-3xl md:text-4xl py-1 dark:text-white text-center">
+        <h3 className="text-3xl font-medium py-1 dark:text-white text-center">
           About Me
         </h3>
         <p className="text-md md:text-lg font-medium text-gray-500 dark:text-gray-400 text-center">
@@ -50,6 +51,7 @@ export default function About() {
             <DropdownButton options={["Portuguese PT-BR", "English"]} />
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

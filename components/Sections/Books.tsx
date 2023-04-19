@@ -3,7 +3,8 @@ import Image from "next/image";
 
 export default function Books() {
   return (
-    <section className=" flex items-center text-gray-600">
+    <section className="books">
+      <div className=" flex items-center text-gray-600">
       <div className="container py-12 mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl py-1 dark:text-white text-center font-medium">
@@ -93,6 +94,7 @@ export default function Books() {
           </div>
           
         </div>
+      </div>
       </div>
     </section>
   );

@@ -5,7 +5,8 @@ import { portfolioData } from "data/portfolioData";
 
 export default function Portfolio() {
   return (
-    <section className="py-10 flex-col">
+    <section className="portfolio">
+      <div className="py-10 flex-col">
       <div>
         <h1 className="text-3xl py-1 dark:text-white text-center font-medium">
           Portfolio
@@ -21,6 +22,7 @@ export default function Portfolio() {
             {...props}
              />
         ))}
+      </div>
       </div>
     </section>
   );

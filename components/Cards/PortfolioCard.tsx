@@ -21,10 +21,10 @@ export default function PortfolioCard(props: any) {
       </div>
 
       <div className=" sm:flex sm:px-8 flex-col py-4 m-4 justify-center">
-        <h1 className=" text-left font-semibold text-xl">{props.title}</h1>
+        <h1 className=" text-left font-bold dark:text-gray-800 text-xl">{props.title}</h1>
         <div className="flex flex-col justify-center">
           <div className="flex-col md:text-md max-w-md mx-auto text-start">
-            <p className=" py-2 dark:text-gray-200 text-gray-800 justify-center ">
+            <p className=" py-2 text-gray-800 dark:text-gray-800 justify-center ">
               {props.text}
             </p>
 
