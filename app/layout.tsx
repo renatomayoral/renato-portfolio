@@ -1,6 +1,6 @@
 // These styles apply to every route in the application
-import './globals.css';
-import { Providers } from './providers';
+import 'app/globals.css';
+import { Providers } from 'app/providers';
 import type { Metadata } from 'next';
 
 
