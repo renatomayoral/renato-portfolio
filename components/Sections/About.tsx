@@ -1,6 +1,7 @@
+'use client';
 import Image from "next/image";
-import renato from "@/public/renato.jpg";
-import DropdownButton from "@/src/components/DropdownButton";
+import renato from "public/renato.jpg";
+import DropdownButton from "components/Buttons/DropdownButton";
 
 export default function About() {
   return (

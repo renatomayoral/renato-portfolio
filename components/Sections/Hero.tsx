@@ -1,7 +1,9 @@
+
+'use client';
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
-import renatotransp from "@/public/renatotransp.png";
-import Navbar from "../components/Navbar";
+import renatotransp from "public/renatotransp.png";
+import Navbar from "components/shared/Navbar";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {

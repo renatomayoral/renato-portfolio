@@ -1,5 +1,5 @@
 
-import web1 from "@/public/web1.png";
+import web1 from "public/web1.png";
 
 export const portfolioData = [
   {

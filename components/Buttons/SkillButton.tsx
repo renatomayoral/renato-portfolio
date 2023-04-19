@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 

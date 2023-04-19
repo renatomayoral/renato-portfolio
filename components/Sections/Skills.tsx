@@ -1,6 +1,7 @@
-import SkillButton from "../components/SkillButton";
+'use client';
+import SkillButton from "components/Buttons/SkillButton";
 import { AiOutlineShop, AiOutlineDatabase } from "react-icons/ai";
-import SkillComponent from "../components/SkillComponent";
+import SkillComponent from "components/shared/SkillComponent";
 import { SiHtml5, SiTailwindcss, SiCss3, SiReact, SiJavascript, SiTypescript, SiMongodb, SiDocker, SiPython, SiGraphql } from "react-icons/si";
 import {TbBrandNextjs} from "react-icons/tb"
 

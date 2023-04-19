@@ -1,16 +1,17 @@
+"use client"
 import { MdWorkOutline, MdOutlineCastForEducation } from "react-icons/md";
 import {GiAchievement } from "react-icons/gi"
 import {AiOutlineSafetyCertificate} from "react-icons/ai"
-import WorkItem from "../components/QualificationComponents/WorkItems";
-import EducationItem from "../components/QualificationComponents/EducationItems";
-import CertificatesItem from "../components/QualificationComponents/CertificatesItems";
-import AchievementsItem from "../components/QualificationComponents/AchievementsItems";
+import WorkItem from "components/Qualification/WorkItems";
+import EducationItem from "components/Qualification/EducationItems";
+import CertificatesItem from "components/Qualification/CertificatesItems";
+import AchievementsItem from "components/Qualification/AchievementsItems";
 import {
   workData,
   educationData,
   achievementsData,
   certificatesData,
-} from "../data/qualificationData";
+} from "data/qualificationData";
 
 import { useState } from "react";
 

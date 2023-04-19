@@ -1,5 +1,7 @@
-import PortfolioCard from "../components/PortfolioCard";
-import { portfolioData } from "../data/portfolioData";
+'use client';
+
+import PortfolioCard from "components/Cards/PortfolioCard";
+import { portfolioData } from "data/portfolioData";
 
 export default function Portfolio() {
   return (

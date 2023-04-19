@@ -1,3 +1,4 @@
+'use client';
 export default function SkillComponent(props: {
   skillIcon: any;
   language: string;

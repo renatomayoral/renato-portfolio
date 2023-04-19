@@ -1,5 +1,6 @@
 "use client";
 
+'use client';
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 

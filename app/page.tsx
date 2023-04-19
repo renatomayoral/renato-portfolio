@@ -1,10 +1,9 @@
-'use client';
-import Hero from "@/src/sections/Hero";
-import Portfolio from "@/src/sections/Portfolio";
-import About from "@/src/sections/About";
-import Skills from "@/src/sections/Skills";
-import Qualifications from "@/src/sections/Qualifications";
-import Books from "../sections/Books";
+import Hero from "components/Sections/Hero";
+import Portfolio from "components/Sections/Portfolio";
+import About from "components/Sections/About";
+import Skills from "components/Sections/Skills";
+import Qualifications from "components/Sections/Qualifications";
+import Books from "components/Sections/Books";
 
 
 export default function Home() {
